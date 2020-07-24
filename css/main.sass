@@ -1,0 +1,116 @@
+/*Font Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap')
+
+$white-color: white
+$background-color: #050d18
+$blue-litecolor: #007bff
+$blue-color: #163f77
+$black-litecolor: #212431
+$grey-color: #a8a9b4
+
+/* -------------------------------------------- Generals -------------------------------------------------------------*/
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Raleway', sans-serif
+  box-sizing: border-box
+
+
+.nav-toggle
+  position: fixed
+  font-size: 24px
+  text-align: right
+  top: 15px
+  right: 15px
+  border: 0
+  outline: none !important
+  background: none
+
+  i
+    color: $blue-litecolor
+    cursor: pointer
+
+
+ul
+  list-style: none
+
+
+/* ----------------------------------------------- Header ----------------------------------------------------*/
+.header
+  position: fixed
+  width: 300px
+  transition: all 0.5s
+  background: $background-color
+  padding: 0 15px
+  top: 0
+  bottom: 0
+
+
+  .profile
+    img
+      display: block
+      width: 120px
+      border: 8px solid $black-litecolor
+      margin: 15px auto
+
+    h1
+      font-size: 24px
+      text-align: center
+      font-weight: 600
+
+
+      a
+        color: $white-color
+        text-decoration: none
+
+
+    .icon-social
+      i
+        font-size: 18px
+        display: inline-block
+        color: $white-color !important
+        background: $black-litecolor
+        padding: 8px 0
+        border-radius: 50%
+        width: 36px
+        height: 36px
+        transition: 0.3s
+
+        &:hover
+          background: $blue-litecolor
+
+.nav-menu
+  padding-top: 30px
+
+  a
+    display: flex
+    align-items: center
+    padding: 12px 15px
+    margin-bottom: 8px
+    transition: 0.3s
+    font-size: 15px
+    color: $grey-color
+
+    &:hover
+      color: $white-color
+
+    &:hover i
+      color: $blue-litecolor
+
+    i
+      font-size: 20px
+      padding-right: 8px
+      color: $grey-color
+.nav-menu *
+  margin: 0
+  padding: 0
+  text-decoration: none !important
+/* --------------------------------------------- Media Display ---------------------------------------------*/
+@media (max-width: 991px) and (min-width: 1px)
+  .header
+    margin-left: -300px
+
+
+  .header.toggled
+    margin-left: 0

@@ -1,2 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 package.json
+.idea/.gitignore
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/portfolio.iml
+.idea/vcs.xml
+.idea/watcherTasks.xml
+css/main.css.map
