@@ -15,16 +15,17 @@
     <!--Icons-->
     <script src="https://kit.fontawesome.com/e2aa28376d.js" crossorigin="anonymous"></script>
 
+    <link rel="shortcut icon" href="img/me.jpg">
 
     <title>Santiago Gomez</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="0">
 <!--Button Mobile Navbar-->
-<button type="button" class="nav-toggle d-xl-none">
+<button type="button" class="nav-toggle d-lg-none">
     <i id="icon" class="fas fa-bars" onclick="openNav()"></i>
 </button>
 
-<!--Start Header-->
+<!-- Header -->
 <header class="header toggled" id="sidebar">
     <div class="d-flex flex-column">
         <!--Profile-->
@@ -53,47 +54,64 @@
         <nav class="nav-menu">
             <ul>
                 <li class="active ">
-                    <a href="index.html">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
+                    <a href="#home">
+                        <i class="fa-fw fas fa-home"></i>
+                        <span class="align-middle">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#about">
-                        <i class="fas fa-user"></i>
-                        <span>About</span>
+                        <i class="fa-fw far fa-user"></i>
+                        <span class="align-middle">About</span>
                     </a>
                 </li>
                 <li>
                     <a href="#studies">
-                        <i class="fas fa-award"></i>
-                        <span>Studies</span>
+                        <i class="fa-fw far fa-address-book"></i>
+                        <span class="align-middle">Studies</span>
                     </a>
                 </li>
                 <li>
                     <a href="#portfolio">
-                        <i class="fas fa-laptop-code"></i>
-                        <span>Portfolio</span>
+                        <i class="fa-fw far fa-file-alt"></i>
+                        <span class="align-middle">Portfolio</span>
                     </a>
                 </li>
                 <li>
                     <a href="#contact">
-                        <i class="far fa-envelope"></i>
-                        <span>Contact</span>
+                        <i class="fa-fw far fa-envelope"></i>
+                        <span class="align-middle">Contact</span>
                     </a>
                 </li>
             </ul>
         </nav>
-
     </div>
 </header>
+<!-- End Header -->
 
-<!--End Header-->
+<!-- Presentation Section -->
+<section class="d-flex flex-column justify-content-center align-items-center" id="home">
+    <div class="home-container">
+        <h1>Santiago Gomez</h1>
+        <p>I'm <span id="typed"></span></p>
+    </div>
+</section>
+
 
 <!-- Local JavaScript -->
 <script src="js/main.js"></script>
-<!--External Libraries-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+    let typed = new Typed('#typed', {
+        strings: ["Developer",
+            "Backend Developer",
+            "Student"],
+        backSpeed: 80,
+        typeSpeed: 60,
+        loop: true,
+    })
+</script>
+<!--External Libraries-->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
