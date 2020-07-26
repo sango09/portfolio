@@ -11,22 +11,29 @@ $grey-color: #a8a9b4
 /* -------------------------------------------- Generals -------------------------------------------------------------*/
 
 body::-webkit-scrollbar
-  width: 1rem
+  width: 0.5rem
 
 
 body::-webkit-scrollbar-track
-  background: #012B55
+  background: $white-color
 
 
 body::-webkit-scrollbar-thumb
-  background: #26272C
+  background: #050d18
 
 
 body
   margin: 0
   padding: 0
-  font-family: 'Raleway', sans-serif
+  font-family: 'Opens Sans', sans-serif
   box-sizing: border-box
+  color: #272829
+
+h1, h2, h3, h4, h5, h6
+  font-family: "Raleway", sans-serif
+
+*
+  scroll-behavior: smooth
 
 
 .nav-toggle
@@ -52,6 +59,21 @@ ul
   width: 1.25em !important
   margin-right: 0.5rem !important
   vertical-align: middle !important
+
+.flex-column
+  height: 100vh
+
+section
+  padding: 60px 0
+  overflow: hidden
+
+
+h3
+  font-weight: 700
+  font-size: 26px
+  color: $blue-color
+
+
 /* ----------------------------------------------- Header ----------------------------------------------------*/
 .header.toggled
   margin-left: 0
@@ -64,6 +86,7 @@ ul
   padding: 0 15px
   top: 0
   bottom: 0
+  z-index: 4
 
   .profile
     img
@@ -99,6 +122,18 @@ ul
         &:hover
           background: $blue-litecolor
 
+  .languages
+    margin-top: 35vh
+
+    ul
+      padding: 0
+
+    .languages-flags
+      width: 4vh
+      height: 4vh
+      cursor: pointer
+      margin-right: 10px
+
 .nav-menu *
   margin: 0
   padding: 0
@@ -127,13 +162,11 @@ ul
       color: $grey-color
 
 
-
-
 /* --------------------------------------------------- Presentation -----------------------------------*/
 #home
-  width: 100%
+  margin-left: 300px
   height: 100vh
-  background: url("https://bootstrapmade.com/demo/themes/iPortfolio/assets/img/hero-bg.jpg") top center
+  background: url("../img/presentation.jpg") top center
   background-size: cover
 
   .initial-container
@@ -156,12 +189,114 @@ ul
       letter-spacing: 1px
       border-bottom: 3px solid $blue-litecolor
 
-/* --------------------------------------------- Media Display ---------------------------------------------*/
+  .btn-get-started
+    font-size: 64px
+    transition: 0.5s
+    color: $white-color
+    height: 60px
+    margin-top: 20px
+    display: block
+    -webkit-animation: pulse 2s infinite
+    animation: pulse 2s infinite
+
+    &:hover
+      padding-top: 10px
+      color: $blue-litecolor
+
+
+/* --------------------------------------------- About Section -------------------------------------------------*/
+#main
+  margin-left: 300px
+
+  .section-title
+    h2
+      font-size: 32px
+      font-weight: bold
+      margin-bottom: 20px
+      padding-bottom: 20px
+      position: relative
+      color: $blue-color
+
+      &:after
+        content: ""
+        position: absolute
+        display: block
+        width: 60px
+        height: 3px
+        background: $blue-litecolor
+        bottom: 0
+
+    p
+      line-height: 1.6
+
+  .arrow-table
+    i
+      color: $blue-litecolor
+
+/* -------------------------------------------- Skills Section -------------------------------------------------------*/
+.skills
+  .progress
+    height: 50px
+    display: block
+    background: none
+
+    .skill
+      padding: 10px 0
+      margin: 0 0 6px 0
+      text-transform: uppercase
+      display: block
+      font-weight: 600
+      font-family: "Poppins", sans-serif
+      color: #050d18
+
+      .value
+        float: right
+        font-style: normal
+
+  .progress-bar-wrap
+    background: #dce8f8
+
+    .progress-bar
+      height: 10px
+      transition: .9s
+      background-color: $blue-litecolor
+      border-radius: 6px
+
+
+
+
+/* ---------------------------------------------- Icon top ---------------------------------------------------------- */
+.back-to-top
+  position: fixed
+  width: 40px
+  height: 40px
+  border-radius: 50px
+  background: $blue-litecolor
+  color: $white-color !important
+  transition: display 0.5s ease-in-out
+  z-index: 4
+  right: 15px
+  bottom: 15px
+
+  i
+    font-size: 24px
+    position: absolute
+    top: 7px
+    left: 9.5px
+
+/* --------------------------------------------- Media Display -------------------------------------------------------*/
 @media (max-width: 991px) and (min-width: 1px)
+  #home
+    width: 100%
+    margin-left: 0
+
   .header.toggled
     margin-left: -300px
+  #main
+    margin-left: 0
 
-@media (max-width: 768px )
+
+@media (max-width: 768px)
   #home h1
     font-size: 28px
     line-height: 36px
