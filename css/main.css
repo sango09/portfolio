@@ -296,6 +296,10 @@ h3 {
     font-size: 28px;
     line-height: 36px;
   }
+
+  .header .languages {
+    margin-top: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
