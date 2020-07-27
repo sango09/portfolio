@@ -298,5 +298,10 @@ h3 {
     line-height: 36px;
   }
 }
+@media (max-width: 450px) {
+  .languages {
+    margin-top: 25px !important;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
