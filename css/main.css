@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   outline: none !important;
   background: none;
+  z-index: 4;
 }
 .nav-toggle i {
   color: #007bff;
@@ -116,7 +117,7 @@ h3 {
   background: #007bff;
 }
 .header .languages {
-  margin-top: 35vh;
+  margin-top: auto;
 }
 .header .languages ul {
   padding: 0;
@@ -295,10 +296,6 @@ h3 {
   #home h1 {
     font-size: 28px;
     line-height: 36px;
-  }
-
-  .header .languages {
-    margin-top: auto;
   }
 }
 
