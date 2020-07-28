@@ -21,10 +21,10 @@
 
     <title>Santiago Gomez</title>
 </head>
-<body data-spy="scroll" data-target="#sidebar" data-offset="0">
+<body>
 <!--Button Mobile Navbar-->
 <button type="button" class="nav-toggle d-lg-none">
-    <i id="icon" class="fas fa-bars bounce-top" onclick="openNav()"></i>
+    <i id="icon" class="fas fa-bars bounce-top" onclick="startMain()"></i>
 </button>
 
 <!-- Header -->
@@ -53,10 +53,10 @@
             </div>
         </div>
         <!-- Nav-menu -->
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="navbar">
             <ul>
-                <li class="active ">
-                    <a href="#home">
+                <li class="active">
+                    <a href="#">
                         <i class="fa-fw fas fa-home"></i>
                         <span class="align-middle">Home</span>
                     </a>
@@ -67,7 +67,7 @@
                         <span class="align-middle">About</span>
                     </a>
                 </li>
-                <li>
+                <li class="nav-item ">
                     <a href="#studies">
                         <i class="fa-fw far fa-address-book"></i>
                         <span class="align-middle">Studies</span>
@@ -91,7 +91,7 @@
             <ul>
                 <li>
                     <a href="es.html">
-                        <img src="img/col-0.png" alt="spain" class="languages-flags" id="spanish">
+                        <img src="img/es.png" alt="spain" class="languages-flags" id="spanish">
                     </a>
                     <a href="index.html">
                         <img src="img/us.jpg" alt="" class="languages-flags" id="english">
@@ -105,13 +105,12 @@
 
 <!-- Presentation Section -->
 <section class="d-flex flex-column justify-content-center align-items-center" id="home">
-    <div class="home-container tracking-in-contract-bck">
+    <div class="home-container slide-in-fwd-left">
         <h1>Santiago Gomez</h1>
         <p>I'm <span id="typed"></span></p>
     </div>
-    <a href="#about" class="btn-get-started aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease"
-       data-aos-delay="800">
-        <i class="fas fa-angle-down"></i>
+    <a href="#about" class="btn-get-started">
+        <i class="fas fa-arrow-down"></i>
     </a>
 </section>
 <!--End Presentation Section-->
@@ -237,7 +236,7 @@
 
 
 <!--Icon top-->
-<a href="#" class="back-to-top d-">
+<a href="#" class="back-to-top">
     <i class="fas fa-chevron-up d-inline"></i>
 </a>
 
@@ -253,19 +252,31 @@
         backSpeed: 50,
         typeSpeed: 80,
         loop: true,
+        backDelay: 1000,
     })
 </script>
+
 <!--External Libraries-->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('ul li').click(function(){
+            $('li').removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+
 </body>
 </html>

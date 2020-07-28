@@ -1,5 +1,7 @@
 /*Font Raleway*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+/*Font Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 /* -------------------------------------------- Generals -------------------------------------------------------------*/
 body::-webkit-scrollbar {
   width: 0.5rem;
@@ -13,20 +15,36 @@ body::-webkit-scrollbar-thumb {
   background: #050d18;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Opens Sans", sans-serif;
   box-sizing: border-box;
   color: #272829;
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-* {
-  scroll-behavior: smooth;
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #163f77;
 }
 
 .nav-toggle {
@@ -38,15 +56,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   outline: none !important;
   background: none;
-  z-index: 4;
+  z-index: 5;
 }
 .nav-toggle i {
   color: #007bff;
   cursor: pointer;
-}
-
-ul {
-  list-style: none;
 }
 
 .fa-fw {
@@ -60,15 +74,11 @@ ul {
   height: 100vh;
 }
 
-section {
-  padding: 60px 0;
-  overflow: hidden;
+.active a {
+  color: white !important;
 }
-
-h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #163f77;
+.active a i {
+  color: #007bff !important;
 }
 
 /* ----------------------------------------------- Header ----------------------------------------------------*/
@@ -85,6 +95,7 @@ h3 {
   top: 0;
   bottom: 0;
   z-index: 4;
+  overflow-y: auto;
 }
 .header .profile img {
   display: block;
@@ -162,11 +173,23 @@ h3 {
 #home {
   margin-left: 300px;
   height: 100vh;
-  background: url("../img/presentation.jpg") top center;
+  background: url("../img/presentation2.jpg") top center;
   background-size: cover;
 }
-#home .initial-container {
+#home:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.57);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#home .home-container {
   min-width: 300px;
+  position: relative;
+  z-index: 2;
 }
 #home h1 {
   font-size: 64px;
@@ -186,18 +209,24 @@ h3 {
   border-bottom: 3px solid #007bff;
 }
 #home .btn-get-started {
-  font-size: 64px;
+  font-size: 35px;
   transition: 0.5s;
   color: white;
-  height: 60px;
-  margin-top: 20px;
+  height: 70px;
   display: block;
+  z-index: 2;
+  border-radius: 50px;
+  border: 2px solid white;
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
 #home .btn-get-started:hover {
-  padding-top: 10px;
   color: #007bff;
+}
+#home .btn-get-started .fa-arrow-down {
+  padding-top: 10px;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 
 /* --------------------------------------------- About Section -------------------------------------------------*/
