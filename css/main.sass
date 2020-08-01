@@ -66,7 +66,6 @@ h3
     cursor: pointer
 
 
-
 .fa-fw
   text-align: center
   width: 1.25em !important
@@ -79,6 +78,7 @@ h3
 .active
   a
     color: $white-color !important
+
     i
       color: $blue-litecolor !important
 
@@ -170,7 +170,6 @@ h3
     i
       font-size: 20px
       color: $grey-color
-
 
 
 /* --------------------------------------------------- Presentation -----------------------------------*/
@@ -291,6 +290,120 @@ h3
       background-color: $blue-litecolor
       border-radius: 6px
 
+  .tools
+    align-items: center
+
+    img
+      height: 50px
+      margin-right: 50px
+      max-width: 100%
+
+
+/* ---------------------------------------------- Portfolio ---------------------------------------------------------- */
+
+.portfolio
+  .portfolio-container
+    .portfolio-wrap
+      transition: 0.3s
+      position: relative
+      z-index: 1
+      overflow: hidden
+      height: 405px
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 23%)
+
+      &:before
+        content: ""
+        background-color: rgba(32, 32, 32, .85)
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        transition: ease-in-out 0.3s
+        z-index: 2
+        opacity: 0
+
+      &:hover::before
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        opacity: 1
+
+      &:hover .portfolio-link
+        opacity: 1
+        bottom: 0
+        top: 0
+        left: 0
+        margin-top: 50%
+        padding: 5px
+
+      img
+        max-width: 100%
+        height: auto
+
+      .portfolio-link
+        opacity: 1
+        z-index: 2
+        position: absolute
+        justify-content: center
+        align-items: center
+        text-align: center
+
+        h3
+          color: $white-color
+          font-size: 2rem
+          text-align: center
+          transition: 0.3s
+          width: 100%
+
+        p
+          color: #c8c8c8
+
+
+/* ---------------------------------------------- Contact ----------------------------------------------------------- */
+
+.contact
+  .info, .form
+    padding: 30px
+    width: 100%
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 23%)
+
+    .email, .whatsapp, .linkedin, .github
+      &:hover i
+        background: #149ddd
+        color: $white-color
+
+
+      i
+        font-size: 25px
+        color: $blue-litecolor
+        float: left
+        width: 44px
+        height: 44px
+        background: #dff3fc
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50px
+        transition: all 0.3s ease-in-out
+
+      h4
+        padding: 0 0 0 60px
+        font-size: 22px
+        font-weight: 700
+        margin-bottom: 5px
+        color: $black-litecolor
+
+      p
+        padding: 0 0 10px 60px
+        margin-bottom: 20px
+        font-size: 14px
+        color: $blue-color
+
+  .form
+    width: 100%
+    padding: 30px
+
 
 /* ---------------------------------------------- Icon top ---------------------------------------------------------- */
 .back-to-top
@@ -311,8 +424,23 @@ h3
     top: 7px
     left: 9.5px
 
+
+/* ------------------------------------------------- Footer -------------------------------------------------------   */
+.footer
+  margin-bottom: 30px
+  font-size: 14px
+  box-shadow: 0px -5px 7px -1px #d0d0d0
+
+  .credits
+    i
+      color: red
+
+    a
+      text-decoration: none !important
+      color: $blue-color
+
 /* --------------------------------------------- Media Display -------------------------------------------------------*/
-@media (max-width: 991px) and (min-width: 1px)
+@media (max-width: 992px) and (min-width: 1px)
   #home
     width: 100%
     margin-left: 0
@@ -322,11 +450,23 @@ h3
   #main
     margin-left: 0
 
+  .tools
+    margin-top: 1rem !important
+
+    img
+      margin-top: 40px
+
 
 @media (max-width: 768px)
   #home h1
     font-size: 28px
     line-height: 36px
+
+  .portfolio-wrap
+    margin-top: 50px
+    img
+      width: 100%
+
 
 @media (max-width: 450px)
   .languages
