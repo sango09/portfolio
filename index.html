@@ -24,7 +24,7 @@
 <body>
 <!--Button Mobile Navbar-->
 <button type="button" class="nav-toggle d-lg-none">
-    <i id="icon" class="fas fa-bars bounce-top" onclick="startMain()"></i>
+    <i id="icon" class="fas fa-bars bounce-top" onclick="openNav()"></i>
 </button>
 
 <!-- Header -->
@@ -65,12 +65,6 @@
                     <a href="#about">
                         <i class="fa-fw far fa-user"></i>
                         <span class="align-middle">About</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a href="#studies">
-                        <i class="fa-fw far fa-address-book"></i>
-                        <span class="align-middle">Studies</span>
                     </a>
                 </li>
                 <li>
@@ -165,6 +159,7 @@
             </div>
         </div>
     </section>
+    <!--Skills-->
     <section class="skills">
         <div class="container">
             <div class="section-title">
@@ -220,16 +215,159 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="studies" class="studies">
-        <div class="container">
-            <div class="section-title">
-                <h2>Studies</h2>
+            <div class="section-title pt-5">
+                <h3>Other tools and frameworks i'm use</h3>
+                <div class="tools text-center mt-5">
+                    <img src="img/tools/git.png" alt="Git">
+                    <img src="img/tools/bootstrap.png" alt="Bootstrap">
+                    <img src="img/tools/docker.png" alt="Docker">
+                    <img src="img/tools/visual-studio-code.png" alt="Visual Studio Code">
+                    <img src="img/tools/google-cloud.png" alt="GCP">
+                    <img src="img/tools/mysql.png" alt="Mysql">
+                    <img src="img/tools/npm.png" alt="npm">
+                    <img src="img/tools/sass.png" alt="Sass">
+                </div>
             </div>
         </div>
 
+
     </section>
+    <!--End Skills-->
+
+
+    <!--Porfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row portfolio-container mt-5">
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <a href="https://github.com/sango09/Forgram" title="More Details">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/Forgram.png" alt="">
+
+                            <div class="portfolio-link">
+                                <h3>Forgram</h3>
+                                <p>Application developed in django inspired by Instagram</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <a href="https://andromeda.codes/" title="More Details">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/andromeda.png" alt="">
+                            <div class="portfolio-link">
+                                <h3>Andromeda</h3>
+                                <p>Information system developed for the technological departments of educational
+                                    institutions.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item ">
+                    <a href="https://github.com/sango09/Bootcamp_python/tree/master/Platzi_Data" title="More Details">
+                        <div class="portfolio-wrap">
+                            <img src="img/portfolio/python.png" alt="" style="height: 405px">
+                            <div class="portfolio-link">
+                                <h3>Platzi Data</h3>
+                                <p>Development of a professional web scrapper following the workflow of a data
+                                    engineer</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Porfolio-->
+
+    <!--Contact-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Say Hello!</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                        <div class="email">
+                            <a href="mailto:santiagofl123@gmail.com" class="text-decoration-none">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>santiagofl123@gmail.com</p>
+                            </a>
+                        </div>
+                        <div class="whatsapp">
+                            <a href="https://wa.me/573057391845" class="text-decoration-none">
+                                <i class="fab fa-whatsapp"></i>
+                                <h4>Phone:</h4>
+                                <p>3057391845</p>
+                            </a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/santiago-gomez-florez-aa3831199/"
+                               class="icon-social text-decoration-none">
+                                <i class="fab fa-linkedin"></i>
+                                <h4>Linkedin</h4>
+                                <p>Santiago Gomez Florez</p>
+                            </a>
+                        </div>
+                        <div class="github mt-3">
+                            <a href="https://github.com/sango09" class="text-decoration-none">
+                                <i class="fab fa-github"></i>
+                                <h4>Github:</h4>
+                                <p>sango09</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 form">
+                    <form class="needs-validation" method="post" name="form" action="https://formspree.io/xnqgwpdw" novalidate>
+
+                        <div class="form-row form-group">
+                            <div class="form-group col-md-6">
+                                <label for="full-name">Your Name *</label>
+                                <input type="text" name="name" class="form-control" id="full-name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email-address">Your Email *</label>
+                                <input type="email" name="_replyto" id="email-address"  class="form-control"
+                                       placeholder="example@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" class="form-control" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                                      required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Contact-->
+
+    <!--Footer-->
+    <footer class="footer pt-3">
+        <div class="container">
+            <div class="credits text-center">
+                <span>Copyright 2020 all rights reserved | This website is made with <i class="fas fa-heart"></i> by
+                <a href="#">Santiago Gomez</a></span>
+            </div>
+
+        </div>
+    </footer>
+    <!--End Footer-->
 
 </main>
 <!--End Main Content-->
@@ -242,8 +380,7 @@
 
 
 <!-- Local JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" async></script>
 <script>
     let typed = new Typed('#typed', {
         strings: ["Backend Developer",
@@ -255,27 +392,24 @@
         backDelay: 1000,
     })
 </script>
-
 <!--External Libraries-->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" async></script>
+<script src="js/validateContact.js" async></script>
+<!--<script src="js/validateContact.js"></script>-->
+
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function(){
-        $('ul li').click(function(){
-            $('li').removeClass("active");
-            $(this).addClass("active");
-        });
-    });
-</script>
+        crossorigin="anonymous" async></script>
+<script src="js/main.js" async></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" async></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" async></script>
 
 
 </body>
