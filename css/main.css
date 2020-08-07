@@ -63,13 +63,6 @@ h3 {
   cursor: pointer;
 }
 
-.fa-fw {
-  text-align: center;
-  width: 1.25em !important;
-  margin-right: 0.5rem !important;
-  vertical-align: middle !important;
-}
-
 .flex-column {
   height: 100vh;
 }
@@ -77,7 +70,7 @@ h3 {
 .active a {
   color: white !important;
 }
-.active a i {
+.active a ion-icon {
   color: #007bff !important;
 }
 
@@ -113,14 +106,13 @@ h3 {
   text-decoration: none;
 }
 .header .profile .icon-social i {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   color: white !important;
   background: #212431;
   padding: 8px 0;
   border-radius: 50%;
   width: 36px;
-  height: 36px;
   transition: 0.3s;
   margin-right: 5px;
 }
@@ -161,12 +153,16 @@ h3 {
 .nav-menu a:hover {
   color: white;
 }
-.nav-menu a:hover i {
+.nav-menu a:hover ion-icon {
   color: #007bff;
 }
-.nav-menu a i {
-  font-size: 20px;
+.nav-menu a ion-icon {
+  font-size: 23px;
   color: #a8a9b4;
+  text-align: center;
+  width: 1.25em !important;
+  margin-right: 0.5rem !important;
+  vertical-align: middle !important;
 }
 
 /* --------------------------------------------------- Presentation -----------------------------------*/
@@ -178,7 +174,7 @@ h3 {
 }
 #home:before {
   content: "";
-  background: rgba(5, 13, 24, 0.57);
+  background: rgba(5, 13, 24, 0.66);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -328,6 +324,7 @@ h3 {
   left: 0;
   margin-top: 50%;
   padding: 5px;
+  display: block;
 }
 .portfolio .portfolio-container .portfolio-wrap img {
   max-width: 100%;
@@ -340,6 +337,7 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  display: none;
 }
 .portfolio .portfolio-container .portfolio-wrap .portfolio-link h3 {
   color: white;
@@ -356,7 +354,7 @@ h3 {
 .contact .info, .contact .form {
   padding: 30px;
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .contact .info .email:hover i, .contact .info .whatsapp:hover i, .contact .info .linkedin:hover i, .contact .info .github:hover i, .contact .form .email:hover i, .contact .form .whatsapp:hover i, .contact .form .linkedin:hover i, .contact .form .github:hover i {
   background: #149ddd;
@@ -395,13 +393,13 @@ h3 {
 
 /* ---------------------------------------------- Icon top ---------------------------------------------------------- */
 .back-to-top {
+  display: none;
   position: fixed;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   background: #007bff;
   color: white !important;
-  transition: display 0.5s ease-in-out;
   z-index: 4;
   right: 15px;
   bottom: 15px;
@@ -417,7 +415,7 @@ h3 {
 .footer {
   margin-bottom: 30px;
   font-size: 14px;
-  box-shadow: 0px -5px 7px -1px #d0d0d0;
+  box-shadow: 0px -5px 7px -1px #efeeee;
 }
 .footer .credits i {
   color: red;
@@ -447,6 +445,11 @@ h3 {
   }
   .tools img {
     margin-top: 40px;
+  }
+
+  .contact #contact_info {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 @media (max-width: 768px) {
