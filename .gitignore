@@ -8,3 +8,5 @@ package.json
 .idea/vcs.xml
 .idea/watcherTasks.xml
 css/main.css.map
+.idea/inspectionProfiles/
+
