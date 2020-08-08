@@ -215,6 +215,7 @@ h3 {
   border: 2px solid white;
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
+  margin-top: 3rem;
 }
 #home .btn-get-started:hover {
   color: #007bff;
@@ -374,17 +375,12 @@ h3 {
   transition: all 0.3s ease-in-out;
 }
 .contact .info .email h4, .contact .info .twitter h4, .contact .info .linkedin h4, .contact .info .github h4, .contact .form .email h4, .contact .form .twitter h4, .contact .form .linkedin h4, .contact .form .github h4 {
-  padding: 0 0 0 60px;
+  padding: 10px 0 40px 60px;
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 5px;
-  color: #212431;
-}
-.contact .info .email p, .contact .info .twitter p, .contact .info .linkedin p, .contact .info .github p, .contact .form .email p, .contact .form .twitter p, .contact .form .linkedin p, .contact .form .github p {
-  padding: 0 0 10px 60px;
   margin-bottom: 20px;
-  font-size: 14px;
-  color: #163f77;
+  color: #212431;
+  font-family: "Opens Sans", sans-serif;
 }
 .contact .form {
   width: 100%;
