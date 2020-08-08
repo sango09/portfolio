@@ -1,7 +1,6 @@
 const button = document.getElementById("scrollTop")
 const toggle = document.getElementById("sidebar")
 const icon = document.getElementById("icon")
-const active = document.getElementsByClassName("active")
 
 window.onscroll = () => scrollToTop()
 
