@@ -356,11 +356,11 @@ h3 {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
-.contact .info .email:hover i, .contact .info .whatsapp:hover i, .contact .info .linkedin:hover i, .contact .info .github:hover i, .contact .form .email:hover i, .contact .form .whatsapp:hover i, .contact .form .linkedin:hover i, .contact .form .github:hover i {
+.contact .info .email:hover i, .contact .info .twitter:hover i, .contact .info .linkedin:hover i, .contact .info .github:hover i, .contact .form .email:hover i, .contact .form .twitter:hover i, .contact .form .linkedin:hover i, .contact .form .github:hover i {
   background: #149ddd;
   color: white;
 }
-.contact .info .email i, .contact .info .whatsapp i, .contact .info .linkedin i, .contact .info .github i, .contact .form .email i, .contact .form .whatsapp i, .contact .form .linkedin i, .contact .form .github i {
+.contact .info .email i, .contact .info .twitter i, .contact .info .linkedin i, .contact .info .github i, .contact .form .email i, .contact .form .twitter i, .contact .form .linkedin i, .contact .form .github i {
   font-size: 25px;
   color: #007bff;
   float: left;
@@ -373,14 +373,14 @@ h3 {
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-.contact .info .email h4, .contact .info .whatsapp h4, .contact .info .linkedin h4, .contact .info .github h4, .contact .form .email h4, .contact .form .whatsapp h4, .contact .form .linkedin h4, .contact .form .github h4 {
+.contact .info .email h4, .contact .info .twitter h4, .contact .info .linkedin h4, .contact .info .github h4, .contact .form .email h4, .contact .form .twitter h4, .contact .form .linkedin h4, .contact .form .github h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 5px;
   color: #212431;
 }
-.contact .info .email p, .contact .info .whatsapp p, .contact .info .linkedin p, .contact .info .github p, .contact .form .email p, .contact .form .whatsapp p, .contact .form .linkedin p, .contact .form .github p {
+.contact .info .email p, .contact .info .twitter p, .contact .info .linkedin p, .contact .info .github p, .contact .form .email p, .contact .form .twitter p, .contact .form .linkedin p, .contact .form .github p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
